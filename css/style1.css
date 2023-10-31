@@ -7,6 +7,8 @@
 
 header{background: #1f242d;}
 
+.navbar a{text-decoration: none;}
+
 .navbar p{text-decoration: none;
 color: #0ef;
 font-size: 36px;
@@ -271,3 +273,10 @@ text-align: center;
 margin-top: 16px}
 
 .nav18{border-top: solid silver 2px;}
+
+.nav4 a{text-decoration: none;
+font-size: 26px;
+color: white;
+text-align: center;
+display: flex;
+justify-content: center;}
