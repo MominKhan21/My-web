@@ -15,7 +15,34 @@ font-size: 36px;
 font-weight: 800;
 margin: 20px;
 cursor: default;
-animation: slideRight 1s forwards;}
+animation: bounce 1s infinite;}
+
+    @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateY(-20px); /* Bounce upward */
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0); /* Start with zero scale (hidden) */
+    }
+    100% {
+        transform: scale(1); /* Zoom in to the original size (1x scale) */
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start completely transparent (hidden) */
+    }
+    100% {
+        opacity: 1; /* Fade in to full opacity */
+    }
+}
 
 nav ul li{display: inline-block;
 list-style: none;
@@ -33,8 +60,7 @@ nav ul li a:hover{color: #0ef;}
 margin-top: 40px;
 color: white;
 font-weight: 700;
-width: 100%;
-animation: slideRight 1s ease forwards;}
+width: 100%;}
 
 .nav2 a{display: inline-block;
 text-decoration: none;
@@ -52,39 +78,88 @@ background: grey;}
 .nav3 img{width: 100%;
 height: 450px;
 margin-top: 100px;
-margin-bottom: 90px}
+margin-bottom: 90px;
+animation: zoomIn 2s forwards;}
 
 .nav2 h3{
 	font-size: 32px;
 	font: 700;
 	color: white;
 	margin-top: 150px;
-	animation: slideTop 1s ease forwards;
+    animation: scaleUp 1s forwards;
 }
 
 .nav2 h2{
 	font-size: 32px;
 	font: 700;
 	color: white;
-	animation: slideTop 1s ease forwards;
+    animation: scaleUp 1s forwards;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .nav2 h2 span{
 	color: #0ef;
+    animation: colorChange 3s infinite alternate; /* Link animation */
 }
 
 .nav2 h1{
 	font-size: 52px;
 	font-weight: 700;
 	margin: -3px 0;
+    animation: scaleUp 1s forwards;
+}
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .nav2 p{
 	font-size: 16px;
 	color: white;
 	margin-top: 30px;
-	animation: slideTop 1s ease forwards;
+    animation: scaleUp 1s forwards;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #0ef; /* Start color */
+    }
+    100% {
+        color: #FF4500; /* End color */
+    }
 }
 
 .social-media a{
@@ -95,7 +170,7 @@ margin-bottom: 90px}
 	background: #0ef;
 	color: black;
 	box-shadow: 0 0 20px #0ef;
-	animation: slideTop 1s ease forwards;
+    animation: scaleUp 1s forwards;
 }
 
 .sociale-media a{
@@ -107,7 +182,6 @@ margin-bottom: 90px}
 	color: black;
 	box-shadow: 0 0 20px #0ef;
 	margin-bottom: 120px;
-	animation: slideTop 1s ease forwards;
 }
 
 .social-media a:hover{
@@ -122,7 +196,8 @@ footer{background: hsl(222deg 16.67% 23.53%);}
 margin-top: 60px;
 text-align: center;
 color: white;
-font-weight: 600;}
+font-weight: 600;
+animation: shake 1s infinite;}
 
 .nav4 h1 span{color: #0ef;}
 
@@ -139,15 +214,17 @@ font-size: 30px;}
 font-size: 15px;
 padding-top: 15px;}
 
+.nav09{display: flex;
+justify-content: center;}
 
 .nav9{height: 350px;
 width: 300px;
 background: hsl(222deg 16.67% 23.53%);
 border-radius: 20px;
-margin-left: 15px;
 margin-top: 50px;
 border: solid #0ef 1px;
-margin-bottom: 100px;}
+margin-bottom: 100px;
+margin-left: 5px}
 
 .nav9 h6{font-size: 35px;
 color: #0ef;
@@ -227,9 +304,6 @@ box-shadow: 0 0 20px black;}
 }
 
 .nav2 {
-    opacity: 0;
-    transform: translateY(100px);
-    animation: slide-in 2s ease forwards;
 }
 
 @keyframes slide-in {
