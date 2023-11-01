@@ -355,3 +355,21 @@ color: white;
 text-align: center;
 display: flex;
 justify-content: center;}
+
+.nav04 a{text-decoration: none;
+background: #0ef;
+color: black;
+margin-top: -100px;
+margin-left: 6px;
+border: solid #0ef 1px;
+padding: 11px 30px}
+
+.nav04 a:hover{background: #0ef;
+border: solid #0ef 1px;
+color: black;
+box-shadow: 0 0 10px #0ef;}
+
+.sociale-media a:hover{background: #0ef;
+border: solid #0ef 2px;
+color: black;
+box-shadow: 0 0 20px #0ef;}
