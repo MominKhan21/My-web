@@ -4,109 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Your CV</title>
+    <title>Your Website Template</title>
 </head>
 <style type="text/css">
     body {
-    font-family: "Arial", sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f0f0f0;
-}
-
-.cv {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
 }
 
 header {
-    background-color: #007BFF;
+    background: #007BFF;
     color: #fff;
-    padding: 20px 0;
+    text-align: center;
+    padding: 50px 0;
 }
 
-.profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin: 10px auto;
+.content, .features {
+    text-align: center;
+    padding: 50px 0;
 }
 
-h1 {
-    font-size: 2em;
-    margin: 10px 0;
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
 }
 
-p {
-    font-size: 1.2em;
-    margin: 5px 0;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 20px 0;
-}
-
-section {
-    padding: 20px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-footer {
-    background-color: #007BFF;
+.feature {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: #00bfff;
     color: #fff;
-    padding: 10px 0;
+    margin: 10px;
 }
+
 </style>
 <body>
-    <div class="cv">
-        <header>
-            <div class="profile">
-                <img src="profile-picture.jpg" alt="Your Photo">
-            </div>
-            <div class="contact">
-                <h1>Your Name</h1>
-                <p>Web Developer</p>
-            </div>
-        </header>
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: your@email.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-        <section class="education">
-            <h2>Education</h2>
-            <p>Degree, University, Year</p>
-        </section>
-        <section class="experience">
-            <h2>Work Experience</h2>
-            <p>Job Title, Company, Year</p>
-        </section>
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <!-- Add more skills -->
-            </ul>
-        </section>
-        <!-- Add more sections as needed -->
-        <footer>
-            <p>&copy; 2023 Your Name</p>
-        </footer>
-    </div>
+    <header>
+        <h1 class="animate">Welcome to Your Website</h1>
+    </header>
+    <section class="content">
+        <h2 class="animate">Scroll down to see animations</h2>
+    </section>
+    <section class="features">
+        <div class="feature animate">Feature 1</div>
+        <div class="feature animate">Feature 2</div>
+        <div class="feature animate">Feature 3</div>
+    </section>
+
 </body>
 </html>
