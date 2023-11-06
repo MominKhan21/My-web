@@ -382,3 +382,14 @@ box-shadow: 0 0 10px #0ef;}
 border: solid #0ef 2px;
 color: black;
 box-shadow: 0 0 20px #0ef;}
+
+#custom-cursor {
+    border-radius: 50%;
+    border: solid #1f242d 11px;
+    box-shadow: 0 0 10px #0ef;
+  width: 25px; /* Cursor image width */
+  height: 25px; /* Cursor image height */
+  background: #0ef; /* URL of your cursor image */
+  position: fixed;
+  z-index: 9999; /* Set a high z-index to make it appear on top of other elements */
+}
