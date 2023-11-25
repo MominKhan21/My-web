@@ -358,12 +358,16 @@ margin-top: 16px}
 
 .nav18{border-top: solid silver 2px;}
 
-.nav4 a{text-decoration: none;
+.nav4 h1{margin-bottom: 80px;}
+
+.nav004 a{text-decoration: none;
 font-size: 26px;
 color: white;
 text-align: center;
 display: flex;
 justify-content: center;}
+
+.nav004 a:hover{color: #0ef;}
 
 .nav04 a{text-decoration: none;
 background: #0ef;
@@ -393,3 +397,8 @@ box-shadow: 0 0 20px #0ef;}
   position: fixed;
   z-index: 9999; /* Set a high z-index to make it appear on top of other elements */
 }
+
+.nav004 h1{text-align: center;
+color: white;
+margin-bottom: 40px;
+font-size: 45px}
